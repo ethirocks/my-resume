@@ -1,0 +1,31 @@
+.experience {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+  }
+  
+  .experience h2 {
+    color: #333;
+  }
+  
+  .experience div {
+    margin-bottom: 20px;
+  }
+  
+  .experience h3 {
+    margin: 0;
+  }
+  
+  .experience p {
+    margin: 5px 0;
+  }
+  
+  .experience ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .experience li {
+    margin-bottom: 5px;
+  }
+  

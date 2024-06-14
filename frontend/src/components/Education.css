@@ -1,0 +1,22 @@
+.education {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+  }
+  
+  .education h2 {
+    color: #333;
+  }
+  
+  .education div {
+    margin-bottom: 15px;
+  }
+  
+  .education h3 {
+    margin: 0;
+  }
+  
+  .education p {
+    margin: 5px 0 0;
+  }
+  

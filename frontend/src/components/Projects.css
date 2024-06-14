@@ -1,0 +1,22 @@
+.projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+  }
+  
+  .projects h2 {
+    color: #333;
+  }
+  
+  .projects div {
+    margin-bottom: 20px;
+  }
+  
+  .projects h3 {
+    margin: 0;
+  }
+  
+  .projects p {
+    margin: 5px 0;
+  }
+  
