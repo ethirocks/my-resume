@@ -1,0 +1,31 @@
+.internships {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+  }
+  
+  .internships h2 {
+    color: #333;
+  }
+  
+  .internships div {
+    margin-bottom: 20px;
+  }
+  
+  .internships h3 {
+    margin: 0;
+  }
+  
+  .internships p {
+    margin: 5px 0;
+  }
+  
+  .internships ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .internships li {
+    margin-bottom: 5px;
+  }
+  

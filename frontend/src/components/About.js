@@ -4,10 +4,10 @@ import './About.css';
 
 const About = () => {
   return (
-    <div>
-      <h1>About Me</h1>
-      <p>This is the about section of my resume.</p>
-    </div>
+    <section className="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm [Your Name], a passionate software developer with experience in building web applications.</p>
+    </section>
   );
 };
 
