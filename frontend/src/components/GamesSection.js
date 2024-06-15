@@ -9,6 +9,7 @@ const GamesSection = () => {
 
   const startGame = () => {
     setGameOver(false);
+    setGameStarted(true);
     setScore(0);
 
     const canvas = canvasRef.current;
@@ -18,6 +19,7 @@ const GamesSection = () => {
     let ballY = canvas.height - 30;
     let ballSpeedX = 2;
     let ballSpeedY = -2;
+    const ballRadius = 10;
 
     const paddleHeight = 10;
     const paddleWidth = 75;
@@ -25,7 +27,7 @@ const GamesSection = () => {
 
     const drawBall = () => {
       ctx.beginPath();
-      ctx.arc(ballX, ballY, 10, 0, Math.PI * 2);
+      ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
       ctx.fillStyle = '#0095DD';
       ctx.fill();
       ctx.closePath();
@@ -44,17 +46,18 @@ const GamesSection = () => {
       drawBall();
       drawPaddle();
 
-      if (ballX + ballSpeedX > canvas.width - 10 || ballX + ballSpeedX < 10) {
+      if (ballX + ballSpeedX > canvas.width - ballRadius || ballX + ballSpeedX < ballRadius) {
         ballSpeedX = -ballSpeedX;
       }
-      if (ballY + ballSpeedY < 10) {
+      if (ballY + ballSpeedY < ballRadius) {
         ballSpeedY = -ballSpeedY;
-      } else if (ballY + ballSpeedY > canvas.height - 10) {
+      } else if (ballY + ballSpeedY > canvas.height - ballRadius) {
         if (ballX > paddleX && ballX < paddleX + paddleWidth) {
           ballSpeedY = -ballSpeedY;
           setScore(score => score + 1);
         } else {
           setGameOver(true);
+          setGameStarted(false);
           return;
         }
       }
@@ -74,7 +77,7 @@ const GamesSection = () => {
       }
     };
 
-    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mousemove', mouseMoveHandler, false);
 
     draw();
 
@@ -83,17 +86,13 @@ const GamesSection = () => {
     };
   };
 
-  const handleStartGame = () => {
-    setGameStarted(true);
-    startGame();
-  };
-
   return (
     <div className="games-section">
-      <canvas ref={canvasRef} width={400} height={300} />
-      {!gameStarted && <button onClick={handleStartGame}>Start Game</button>}
-      <div className="score">Score: {score}</div>
-      {gameOver && <div className="game-over">Game Over!</div>}
+      <h2>Enjoy this game for visiting my website!</h2> {/* Fun and whimsical title */}
+      <canvas ref={canvasRef} width={400} height={300} style={{ display: gameStarted ? 'block' : 'none' }} />
+      <div className="score" style={{ display: gameStarted ? 'block' : 'none' }}>Score: {score}</div>
+      {gameOver && <div className="game-over">Game Over! Your Score: {score}</div>}
+      {!gameStarted && !gameOver && <button onClick={startGame}>Start Game</button>}
     </div>
   );
 };
