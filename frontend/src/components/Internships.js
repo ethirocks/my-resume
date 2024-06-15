@@ -1,10 +1,11 @@
 import React from 'react';
 import './Internships.css';
+import '../CommonStyles.css'; // Import the common styles
 
 const Internships = () => {
   return (
-    <section className="internships">
-      <h2>Internships</h2>
+    <div className="internship box" id="internship" data-aos="fade-up">
+      <h2 className="section-title">Internships</h2>
       <div>
         <h3>Software Development Engineer Intern, Amazon</h3>
         <p>May 2020 – Aug 2020</p>
@@ -42,7 +43,7 @@ const Internships = () => {
           <li>Developed APIs, connected databases, and implemented login and sign-up functionality, improving user engagement.</li>
         </ul>
       </div>
-    </section>
+    </div>
   );
 };
 

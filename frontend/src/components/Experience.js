@@ -1,15 +1,16 @@
 import React from 'react';
 import './Experience.css';
+import '../CommonStyles.css'; // Import the common styles
 
 const Experience = () => {
   return (
-    <section className="experience">
-      <h2>Full Time Experience</h2>
+    <div className="experience box" id="experience" data-aos="fade-up">
+      <h2 className="section-title">Experience</h2>
       <div>
         <h3>Software Development Engineer II, Varis</h3>
         <p>March 2022 – Present</p>
         <ul>
-          <li>Spearheaded design initiatives and facilitated team's transition to sprint model, leading stand-ups, sprint planning, and grooming sessions.</li>
+          <li>Spearheaded design initiatives and facilitated team's transition to sprint model...</li>
           <li>Spearheaded various business important projects and delivered them before time with great quality.</li>
           <li>Engineered a testing suite using Robot test framework and Selenium in Python, and crafted temporal workflows and activities.</li>
           <li>Enhanced MongoDB performance through strategic schema versioning and indexing.</li>
@@ -31,7 +32,7 @@ const Experience = () => {
       </div>
       <div>
         <h3>Associate Software Engineer, CGI Group</h3>
-        <p>Aug 2018 – May 2019</p>
+        <p>August 2018 – May 2019</p>
         <ul>
           <li>Operated as a full stack developer in a scaled agile environment, contributing to various stages of the development cycle.</li>
           <li>Developed Java-Spring backend and Angular frontend solutions, improving user interface and experience.</li>
@@ -39,7 +40,7 @@ const Experience = () => {
           <li>Practiced Behavior-Driven Development (BDD) and Test-Driven Development (TDD), actively participating in problem-solving sessions.</li>
         </ul>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,22 +1,28 @@
 .education {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin: 20px 0;
-  }
-  
-  .education h2 {
-    color: #333;
-  }
-  
-  .education div {
-    margin-bottom: 15px;
-  }
-  
-  .education h3 {
-    margin: 0;
-  }
-  
-  .education p {
-    margin: 5px 0 0;
-  }
-  
+  padding: 20px;
+  max-width: 800px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+  text-align: left; /* Align text to the left */
+}
+
+.education h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center; /* Center the header */
+}
+
+.education-section {
+  margin-bottom: 1.5em; /* Space between sections */
+}
+
+.education-section h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.education-section p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 0;
+}

@@ -4,12 +4,21 @@
   "private": true,
   "homepage": "https://ethirocks.github.io/my-resume",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "framer-motion": "^11.2.10",
     "react": "^18.3.1",
+    "react-animated-css": "^1.2.1",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
+    "react-scroll": "^1.9.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.1"
   }
 }

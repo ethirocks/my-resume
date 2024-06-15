@@ -1,14 +1,28 @@
 .skills {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin: 20px 0;
-  }
-  
-  .skills h2 {
-    color: #333;
-  }
-  
-  .skills p {
-    margin: 10px 0;
-  }
-  
+  padding: 20px;
+  max-width: 800px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+  text-align: left; /* Align text to the left */
+}
+
+.skills h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center; /* Center the header */
+}
+
+.skills-section {
+  margin-bottom: 1.5em; /* Space between sections */
+}
+
+.skills-section h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.skills-section p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 0;
+}
