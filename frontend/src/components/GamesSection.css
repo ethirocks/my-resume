@@ -1,49 +1,55 @@
+/* GamesSection.css */
+
 .games-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding: 50px 0;
-    text-align: center;
-    background-color: #e0f7fa;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
-  }
-  
-  canvas {
-    border: 1px solid #000;
-    background-color: #fff;
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
-  }
-  
-  .score, .game-over {
-    margin-top: 20px;
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .game-over {
-    color: red;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #0095DD;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #007BBB;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f8f9fa; /* Change the background color to a light gray */
+  width: 100%; /* Ensure the section takes up full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.games-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+canvas {
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 100%; /* Make the canvas take up the full width of the section */
+  max-width: 400px; /* Set maximum width of the canvas */
+  height: 300px; /* Set height of the canvas */
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.game-over {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: red;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #0095DD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007BBB;
+}
