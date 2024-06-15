@@ -1,0 +1,82 @@
+.navbar {
+  background: #1a1a1a; /* Darker background for a sleek look */
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for a modern look */
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Adequate spacing between items */
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px; /* Slightly larger logo */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #ffffff; /* White color for text */
+  font-size: 18px; /* Slightly larger font size */
+  font-family: 'Arial', sans-serif; /* Modern font */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+  position: relative; /* For pseudo-elements */
+  padding: 5px 10px; /* Padding for clickable area */
+  display: flex;
+  align-items: center; /* Align icon and text */
+}
+
+.navbar button i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.navbar button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #61dafb; /* Line color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar button:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar button:hover {
+  color: #61dafb; /* Change color to React's light blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}

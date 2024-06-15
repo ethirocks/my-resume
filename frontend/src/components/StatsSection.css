@@ -1,0 +1,42 @@
+.stats-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the section takes up full height */
+    background-color: #f4f4f4;
+    width: 100%; /* Ensure the section takes up full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: hidden; /* Hide elements that move out of bounds */
+    position: relative; /* Needed for absolute positioning of balls */
+  }
+  
+  .stat {
+    text-align: center;
+    width: 30%;
+    position: absolute; /* Positioning for bouncing animation */
+  }
+  
+  .stat h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .stat p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    background-color: #61dafb;
+    height: 10px;
+    border-radius: 10px 0 0 10px;
+    transition: width 1s ease-in-out;
+  }
+  

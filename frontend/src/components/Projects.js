@@ -1,10 +1,11 @@
 import React from 'react';
 import './Projects.css';
+import '../CommonStyles.css'; // Import the common styles
 
 const Projects = () => {
   return (
-    <section className="projects">
-      <h2>Projects</h2>
+    <div className="projects box" id="projects" data-aos="fade-up">
+      <h2 className="section-title">Projects</h2>
       <div>
         <h3>Application Monitor</h3>
         <p>Developed a Java application to monitor metrics such as health, temperature, processor count, and thread counts. Stored metrics in a database and displayed them graphically for application owners. Implemented alert system for extreme conditions and hosted the application on AWS.</p>
@@ -17,7 +18,7 @@ const Projects = () => {
         <h3>Temporal Ensembling with Semi-Supervised Learning</h3>
         <p>Conducted research to improve model performance. Implemented the paper "Temporal Ensembling with Semi-Supervised Learning" in Python using TensorFlow. Compared the performance of models under various conditions and against other semi-supervised learning models like GAN.</p>
       </div>
-    </section>
+    </div>
   );
 };
 
